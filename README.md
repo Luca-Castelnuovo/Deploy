@@ -1,20 +1,20 @@
-<p align="center"><a href="https://github.com/CubeQuence/CubeQuence"><img src="https://rawcdn.githack.com/CubeQuence/CubeQuence/855a8fe836989ca40c4e50a889362975eab9ac43/public/assets/images/banner.png"></a></p>
+<p align="center"><a href="https://github.com/Luca-Castelnuovo/Deploy"><img src="https://rawcdn.githack.com/CubeQuence/CubeQuence/855a8fe836989ca40c4e50a889362975eab9ac43/public/assets/images/banner.png"></a></p>
 
 <p align="center">
-<a href="https://packagist.org/packages/cubequence/cubequence"><img src="https://poser.pugx.org/cubequence/cubequence/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/cubequence/cubequence"><img src="https://poser.pugx.org/cubequence/cubequence/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/cubequence/cubequence"><img src="https://poser.pugx.org/cubequence/cubequence/license.svg" alt="License"></a>
+<a href="https://github.com/Luca-Castelnuovo/Deploy/commits/master"><img src="https://img.shields.io/github/last-commit/Luca-Castelnuovo/Deploy" alt="Latest Commit"></a>
+<a href="https://github.com/Luca-Castelnuovo/Deploy/issues"><img src="https://img.shields.io/github/issues/Luca-Castelnuovo/Deploy" alt="Issues"></a>
+<a href="LICENSE.md"><img src="https://img.shields.io/github/license/Luca-Castelnuovo/Deploy" alt="License"></a>
 </p>
 
-# CubeQuence
+# Deploy
 
-Ultra-Light custom php framework.
+Auto deploy and build with Github webhooks.
 
 ## Installation
 
 For development
 
-1. `composer create-project --prefer-dist cubequence/cubequence hello-world`
+1. `git clone git@github.com:Luca-Castelnuovo/Deploy.git`
 2. Edit `.env`
 3. `php cubequence app:key`
 4. `php cubequence db:migrate`
@@ -23,7 +23,7 @@ For development
 
 For deployment
 
-1. `git clone https://github.com/CubeQuence/CubeQuence`
+1. `git clone git@github.com:Luca-Castelnuovo/Deploy.git`
 2. `composer install --optimize-autoloader --no-dev`
 3. Edit `.env`
 4. `php cubequence app:key`
@@ -31,7 +31,7 @@ For deployment
 
 ## Security Vulnerabilities
 
-Please review [our security policy](https://github.com/CubeQuence/CubeQuence/security/policy) on how to report security vulnerabilities.
+Please review [our security policy](https://github.com/Luca-Castelnuovo/Deploy/security/policy) on how to report security vulnerabilities.
 
 ## License
 
