@@ -7,8 +7,8 @@ use CQ\Controllers\Controller;
 class UserController extends Controller
 {
     /**
-     * Dashboard screen
-     * 
+     * Dashboard screen.
+     *
      * @return Html
      */
     public function dashboard()

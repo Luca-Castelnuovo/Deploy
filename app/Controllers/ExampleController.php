@@ -2,17 +2,17 @@
 
 namespace App\Controllers;
 
-use Exception;
+use App\Validators\ExampleValidator;
+use CQ\Controllers\Controller;
 use CQ\DB\DB;
 use CQ\Helpers\UUID;
-use CQ\Controllers\Controller;
-use App\Validators\ExampleValidator;
+use Exception;
 
 class ExampleController extends Controller
 {
     /**
-     * List entries
-     * 
+     * List entries.
+     *
      * @return Json
      */
     public function index()
@@ -21,7 +21,7 @@ class ExampleController extends Controller
             'id',
             'string',
             'updated_at',
-            'created_at'
+            'created_at',
         ], []);
 
         return $this->respondJson(
@@ -31,10 +31,10 @@ class ExampleController extends Controller
     }
 
     /**
-     * Create entry
-     * 
+     * Create entry.
+     *
      * @param object $request
-     * 
+     *
      * @return Html
      */
     public function create($request)
@@ -51,7 +51,7 @@ class ExampleController extends Controller
 
         $data = [
             'id' => UUID::v6(),
-            'string' => $request->data->string
+            'string' => $request->data->string,
         ];
 
         DB::create('example', $data);
@@ -63,11 +63,11 @@ class ExampleController extends Controller
     }
 
     /**
-     * Update entry
-     * 
+     * Update entry.
+     *
      * @param object $request
      * @param string $id
-     * 
+     *
      * @return Html
      */
     public function update($request, $id)
@@ -93,14 +93,14 @@ class ExampleController extends Controller
         }
 
         $data = [
-            'string' => $request->data->string ?: $example['string']
+            'string' => $request->data->string ?: $example['string'],
         ];
 
         DB::update(
             'example',
             $data,
             [
-                'id' => $id
+                'id' => $id,
             ]
         );
 
@@ -111,15 +111,15 @@ class ExampleController extends Controller
     }
 
     /**
-     * Delete entry
-     * 
+     * Delete entry.
+     *
      * @param string $id
-     * 
+     *
      * @return Html
      */
     public function delete($id)
     {
-        DB::delete('example',  ['id' => $id]);
+        DB::delete('example', ['id' => $id]);
 
         return $this->respondJson('Example Deleted');
     }

@@ -17,12 +17,12 @@ class ExampleSeeder extends Seeder
         $faker = Seeder::faker();
         $data = [];
 
-        for ($i = 0; $i < 5; $i++) {
+        for ($i = 0; $i < 5; ++$i) {
             $data[] = [
-                'id'            => $faker->uuid,
-                'string'        => $faker->sentence,
-                'updated_at'    => date('Y-m-d H:i:s'),
-                'created_at'    => date('Y-m-d H:i:s'),
+                'id' => $faker->uuid,
+                'string' => $faker->sentence,
+                'updated_at' => date('Y-m-d H:i:s'),
+                'created_at' => date('Y-m-d H:i:s'),
             ];
         }
 
