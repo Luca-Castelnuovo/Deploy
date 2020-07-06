@@ -10,9 +10,24 @@
 
 Auto deploy and build with Github webhooks.
 
-### [Frontend](client)
+## Installation
 
-### [Backend](server)
+For development
+
+1. `git clone git@github.com:Luca-Castelnuovo/Deploy.git`
+2. Edit `.env`
+3. `php cubequence app:key`
+4. `php cubequence db:migrate`
+5. `php cubequence db:seed`
+6. Start development server `php -S localhost:8080 -t public`
+
+For deployment
+
+1. `git clone git@github.com:Luca-Castelnuovo/Deploy.git`
+2. `composer install --optimize-autoloader --no-dev`
+3. Edit `.env`
+4. `php cubequence app:key`
+5. `php cubequence db:migrate`
 
 ## Security Vulnerabilities
 
