@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/Luca-Castelnuovo/Deploy"><img src="https://rawcdn.githack.com/CubeQuence/CubeQuence/855a8fe836989ca40c4e50a889362975eab9ac43/public/assets/images/banner.png"></a></p>
+<p align="center"><a href="https://github.com/Luca-Castelnuovo/Deploy"><img src="https://rawcdn.githack.com/Luca-Castelnuovo/Deploy/09849e0612d3b4ea98589b0b49605483b4164170/public/assets/images/banner.png"></a></p>
 
 <p align="center">
 <a href="https://github.com/Luca-Castelnuovo/Deploy/commits/master"><img src="https://img.shields.io/github/last-commit/Luca-Castelnuovo/Deploy" alt="Latest Commit"></a>
