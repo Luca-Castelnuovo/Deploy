@@ -6,7 +6,7 @@
 <a href="LICENSE.md"><img src="https://img.shields.io/github/license/Luca-Castelnuovo/Deploy" alt="License"></a>
 </p>
 
-# Deploy
+# [NEVER FINIESHED] Deploy
 
 Auto deploy and build with Github webhooks.
 
